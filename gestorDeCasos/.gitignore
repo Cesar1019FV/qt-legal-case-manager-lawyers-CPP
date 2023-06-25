@@ -23,7 +23,6 @@ tags
 .DS_Store
 .directory
 *.debug
-Makefile*
 *.prl
 *.app
 moc_*.cpp
@@ -62,7 +61,6 @@ CMakeLists.txt.user*
 
 # MinGW generated files
 *.Debug
-*.Release
 
 # Python byte code
 *.pyc
