@@ -1,7 +1,15 @@
+/**
+ * @file iniciarsesion.h
+ * @brief This file contains the definition of the iniciarsesion class.
+ */
+
 #include "iniciarsesion.h"
 #include "ui_iniciarsesion.h"
 
-
+/**
+ * @brief Constructor de la clase iniciarsesion.
+ * @param parent Puntero al widget padre.
+ */
 iniciarsesion::iniciarsesion(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::iniciarsesion)
@@ -9,11 +17,20 @@ iniciarsesion::iniciarsesion(QWidget *parent)
     ui->setupUi(this);
 }
 
+/**
+ * @brief Destructor de la clase iniciarsesion.
+ */
 iniciarsesion::~iniciarsesion()
 {
     delete ui;
 }
 
+/**
+ * @brief Función para buscar un usuario y contraseña en un archivo.
+ * @param usuario El nombre de usuario a buscar.
+ * @param contrasena La contraseña a buscar.
+ * @return Devuelve true si se encontró el usuario y contraseña, false en caso contrario.
+ */
 bool buscarUsuarioContrasena(const QString& usuario, const QString& contrasena) {
     QFile archivo(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation) + "//usuarios.txt");
 
@@ -28,7 +45,7 @@ bool buscarUsuarioContrasena(const QString& usuario, const QString& contrasena) 
                 if (usuario == usuarioArchivo && contrasena == contrasenaArchivo) {
                     archivo.close();
                     qDebug() << "Usuario y contraseña encontrados en el archivo.";
-                        return true;
+                    return true;
                 }
             }
         }
@@ -41,27 +58,29 @@ bool buscarUsuarioContrasena(const QString& usuario, const QString& contrasena) 
     return false;
 }
 
-
+/**
+ * @brief Slot para manejar el evento del botón "Continuar".
+ */
 void iniciarsesion::on_pushButton_continuar_clicked()
 {
     QString username = ui->lineEdit_usuario->text();
     QString password = ui->lineEdit_Contrasena->text();
 
     if (buscarUsuarioContrasena(username, password)) {
-        QMessageBox::information(this, "Inicio de Sesion", "El nombre de usuario y contrasena son correctos");
+        QMessageBox::information(this, "Inicio de Sesion", "El nombre de usuario y contraseña son correctos");
         hide();
-        // aqui se debe escribir el codigo que pase a la pagina principal
+        // aquí se debe escribir el código para navegar a la página principal
     }
     else {
-        QMessageBox::information(this, "Inicio de Sesion", "El nombre de usuario y contrasena no son correctos");
+        QMessageBox::information(this, "Inicio de Sesion", "El nombre de usuario y contraseña no son correctos");
     }
-
 }
 
-
+/**
+ * @brief Slot para manejar el evento del botón "Registrarse".
+ */
 void iniciarsesion::on_pushButton_Registrarse_clicked()
 {
     SingUp = new singup(this);
     SingUp->show();
 }
-

@@ -1,7 +1,10 @@
-
 #include "singup.h"
 #include "ui_singup.h"
 
+/**
+ * @brief Constructor de la clase singup.
+ * @param parent Puntero al widget padre.
+ */
 singup::singup(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::singup)
@@ -9,11 +12,17 @@ singup::singup(QWidget *parent) :
     ui->setupUi(this);
 }
 
+/**
+ * @brief Destructor de la clase singup.
+ */
 singup::~singup()
 {
     delete ui;
 }
 
+/**
+ * @brief Slot para manejar el evento del botón "Guardar".
+ */
 void singup::on_pushButton_clicked()
 {
     QString usuarioRE = ui->lineEdit_userRE->text();
@@ -33,4 +42,3 @@ void singup::on_pushButton_clicked()
         hide();
     }
 }
-
