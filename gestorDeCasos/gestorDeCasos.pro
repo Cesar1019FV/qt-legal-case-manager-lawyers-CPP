@@ -9,17 +9,38 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    dialogmain.cpp \
+    fechas.cpp \
+    fechasadd.cpp \
     main.cpp \
     iniciarsesion.cpp \
-    singup.cpp
+    mainwindow.cpp \
+    pagos.cpp \
+    pagosadd.cpp \
+    singup.cpp \
+    todolist.cpp
 
 HEADERS += \
+    dialogmain.h \
+    fechas.h \
+    fechasadd.h \
     iniciarsesion.h \
-    singup.h
+    mainwindow.h \
+    pagos.h \
+    pagosadd.h \
+    singup.h \
+    todolist.h
 
 FORMS += \
+    dialogmain.ui \
+    fechas.ui \
+    fechasadd.ui \
     iniciarsesion.ui \
-    singup.ui
+    mainwindow.ui \
+    pagos.ui \
+    pagosadd.ui \
+    singup.ui \
+    todolist.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
