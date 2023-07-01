@@ -46,3 +46,8 @@ Se muestran cuatro botones principales en la ventana, el botón de "borrar" el c
 
  ![img añadir](https://github.com/Cesar1019FV/proyectoFinal-IE0217-2023-Ciclo1/blob/main/img/a%C3%B1adirpago.jpg) 
 
+## Como ejecutar el programa
+Coming Soon...
+
+## License
+This work is licensed under a [Creative Commons Attribution 4.0 International License][cc-by].
