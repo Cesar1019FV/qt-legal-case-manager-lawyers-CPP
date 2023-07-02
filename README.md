@@ -47,7 +47,17 @@ Se muestran cuatro botones principales en la ventana, el botón de "borrar" el c
  ![img añadir](https://github.com/Cesar1019FV/proyectoFinal-IE0217-2023-Ciclo1/blob/main/img/a%C3%B1adirpago.jpg) 
 
 ## Como ejecutar el programa
-Coming Soon...
+
+### Requisitos de ejecución
+La manera de ejecutar el programa es bastante simple, sin embargo se requieren ciertos requisitos antes de ejecutarlo, el primer requisito es tener instalado Qt en el dispositivo donde va a compilar el programa, y junto con este debe estar completamente instalado qmake, el cual es un elemento de Qt, y ademas se debe aclarar que este programa fue programado, debugueado, y probado en Qt 6.5.1, por lo que para evitar errores de versión, se recomienda actualizar el programa en caso de tener una versión anterior.
+
+### Ejecutar
+Una vez cumplidos esos requisitos se puede proceder a ejecutar el programa de la siguiente manera:
+
+- Primero deberá clonar el repositorio en una carpeta
+- Una vez clonado deberá abrir la terminal de Qt llamada "Qt 6.5.1 (MinGW 11.2.0 64-bit)" en windows, esta normalmente viene instalada junto con Qt 6.5.1, igual servirá con terminales de versiones superiores
+- en esta terminal se deberá ubicar en la carpeta llamada "gestorDeCasos" del repo que clonó
+- una vez ubicado en la carpeta deberá ejecutar el comando en la terminal *mingw32-make -f Makefile.Main*, una vez ejecutado se compilará el programa, se generaran las dependencias, se generará la documentacion Doxygen, y se abrirá tanto la documentación en el navegador, como el programa.
 
 ## License
 This work is licensed under a [Creative Commons Attribution 4.0 International License][cc-by].
