@@ -18,6 +18,7 @@ SOURCES += \
     pagos.cpp \
     pagosadd.cpp \
     singup.cpp \
+    todoadd.cpp \
     todolist.cpp
 
 HEADERS += \
@@ -29,6 +30,7 @@ HEADERS += \
     pagos.h \
     pagosadd.h \
     singup.h \
+    todoadd.h \
     todolist.h
 
 FORMS += \
@@ -40,6 +42,7 @@ FORMS += \
     pagos.ui \
     pagosadd.ui \
     singup.ui \
+    todoadd.ui \
     todolist.ui
 
 # Default rules for deployment.
