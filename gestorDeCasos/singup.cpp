@@ -42,3 +42,12 @@ void singup::on_pushButton_clicked()
         hide();
     }
 }
+
+/**
+ * @brief Cerrar programa
+ */
+void singup::on_pushButton_2_clicked()
+{
+    close();
+}
+

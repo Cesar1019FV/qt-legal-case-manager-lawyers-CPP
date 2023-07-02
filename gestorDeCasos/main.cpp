@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv); /**< Objeto de aplicación Qt. */
-
+    a.setStyle("fusion");
     iniciarsesion w; /**< Objeto de la clase iniciarsesion. */
     w.show(); /**< Mostrar la ventana de inicio de sesión. */
 

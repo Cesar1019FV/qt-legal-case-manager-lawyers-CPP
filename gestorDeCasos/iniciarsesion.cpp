@@ -5,6 +5,7 @@
 
 #include "iniciarsesion.h"
 #include "ui_iniciarsesion.h"
+#include "mainwindow.h"
 
 /**
  * @brief Constructor de la clase iniciarsesion.
@@ -70,6 +71,8 @@ void iniciarsesion::on_pushButton_continuar_clicked()
         QMessageBox::information(this, "Inicio de Sesion", "El nombre de usuario y contraseña son correctos");
         hide();
         // aquí se debe escribir el código para navegar a la página principal
+        MainWindow *mn = new MainWindow(this);
+        mn->show();
     }
     else {
         QMessageBox::information(this, "Inicio de Sesion", "El nombre de usuario y contraseña no son correctos");
@@ -84,3 +87,9 @@ void iniciarsesion::on_pushButton_Registrarse_clicked()
     SingUp = new singup(this);
     SingUp->show();
 }
+
+void iniciarsesion::on_pushButton_salir_clicked()
+{
+    exit(0);
+}
+
