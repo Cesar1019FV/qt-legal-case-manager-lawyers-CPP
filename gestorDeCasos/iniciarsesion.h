@@ -47,6 +47,11 @@ private slots:
      */
     void on_pushButton_Registrarse_clicked();
 
+    /**
+     * @brief Slot para manejar el evento del botón "Salir".
+     */
+    void on_pushButton_salir_clicked();
+
 private:
     Ui::iniciarsesion *ui; /**< Puntero a la interfaz de usuario de la ventana de inicio de sesión. */
     singup *SingUp; /**< Puntero a la ventana de registro. */

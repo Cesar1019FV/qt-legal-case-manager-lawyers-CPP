@@ -40,6 +40,8 @@ private slots:
      */
     void on_pushButton_clicked();
 
+    void on_pushButton_2_clicked();
+
 private:
     Ui::singup *ui; /**< Puntero a la interfaz de usuario de la ventana de registro. */
 
