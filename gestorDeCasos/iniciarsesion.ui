@@ -55,6 +55,13 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_4">
         <item>
+         <widget class="QPushButton" name="pushButton_salir">
+          <property name="text">
+           <string>Salir</string>
+          </property>
+         </widget>
+        </item>
+        <item>
          <widget class="QPushButton" name="pushButton_Registrarse">
           <property name="text">
            <string>Registrarse</string>
