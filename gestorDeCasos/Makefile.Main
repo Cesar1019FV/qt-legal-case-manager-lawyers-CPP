@@ -1,0 +1,19 @@
+.PHONY: all
+
+all: qmake previous_makefile deploy_qt doxygen run
+
+qmake:
+	@qmake
+
+previous_makefile:
+	@mingw32-make -f Makefile
+
+deploy_qt:
+	@cd release && windeployqt.exe .
+
+doxygen:
+	@doxygen Doxyfile
+	@cd html && start index.html
+
+run:
+	@cd release && ./gestorDeCasos.exe
