@@ -12,8 +12,9 @@ deploy_qt:
 	@cd release && windeployqt.exe .
 
 doxygen:
+	@doxygen -g Doxyfile
 	@doxygen Doxyfile
 	@cd html && start index.html
 
 run:
-	@cd release && ./gestorDeCasos.exe
+	@cd release && start gestorDeCasos.exe
